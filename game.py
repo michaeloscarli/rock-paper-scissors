@@ -68,6 +68,7 @@ class game(object):
                 return self.player
         else: #The player entered garbage or nothing
             print "You entered invalid input. Therefore the computer is the victor."
+            self.computer.increment_wins()
             return self.computer
         
     def print_rounds(self):
